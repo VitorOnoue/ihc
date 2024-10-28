@@ -3,10 +3,10 @@ import {
   View,
 
 } from 'react-native';
-import Home from './src/pages/home';
+import Mapa from './src/pages/mapa';
 
 export default function App() {
   return (
-    <Home></Home>
+    <Mapa></Mapa>
   );
 }
