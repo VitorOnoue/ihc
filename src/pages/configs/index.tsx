@@ -16,5 +16,9 @@ const screenHeight = Dimensions.get('window').height;
 // import { style } from "./styles";
 
 export default function Configs() {
-    return
+    return (
+        <View>
+            <Text>lorem ipsum configs</Text>
+        </View>
+    );
 }

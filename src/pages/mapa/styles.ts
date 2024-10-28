@@ -43,25 +43,10 @@ export const style = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'left',
     },
-    alert: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#f4f4f4',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-    },
     icon: {
         width: 24,
         height: 24,
         padding: 10,
-    },
-    alertText: {
-        fontWeight: 'bold',
-        flex: 1,
-        fontSize: 20,
-    },
-    alertDesc: {
-
     },
     menu: {
         position: 'absolute',
@@ -80,4 +65,7 @@ export const style = StyleSheet.create({
     menuItemText: {
         fontSize: 10,
     },
+    locationText: {
+
+    }
 })

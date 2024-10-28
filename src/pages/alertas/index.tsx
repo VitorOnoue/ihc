@@ -16,5 +16,9 @@ const screenHeight = Dimensions.get('window').height;
 // import { style } from "./styles";
 
 export default function Alertas() {
-    return
+    return (
+        <View>
+            <Text>lorem ipsum alertas</Text>
+        </View>
+    );
 }
