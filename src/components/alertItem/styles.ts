@@ -32,4 +32,8 @@ export const style = StyleSheet.create({
         fontSize: 14,
         color: '#555',
     },
+    alertDate: {
+        fontSize: 14,
+        color: '#555',
+    },
 })

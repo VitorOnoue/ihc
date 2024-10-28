@@ -7,9 +7,10 @@ type AlertItemProps = {
     title: string;
     description: string;
     location: string;
+    date: string;
 };
 
-const AlertItem: React.FC<AlertItemProps> = ({ icon, title, description, location }) => {
+const AlertItem: React.FC<AlertItemProps> = ({ icon, title, description, location, date }) => {
     return (
         <View style={style.alertContainer}>
             <Image source={icon} style={style.icon} />
@@ -17,6 +18,7 @@ const AlertItem: React.FC<AlertItemProps> = ({ icon, title, description, locatio
                 <Text style={style.alertTitle}>{title}</Text>
                 <Text style={style.alertDescription}>{description}</Text>
                 <Text style={style.alertLocation}>{location}</Text>
+                <Text style={style.alertDate}>{date}</Text>
             </View>
         </View>
     );

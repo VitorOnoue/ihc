@@ -36,12 +36,12 @@ export const style = StyleSheet.create({
         height: screenWidth * 0.95,
     },
     boxAlerts: {
-        width: '90%',
+        width: '100%',
     },
     alertTitleText: {
         fontSize: 30,
         fontWeight: 'bold',
-        textAlign: 'left',
+        marginLeft: 10,
     },
     icon: {
         width: 24,

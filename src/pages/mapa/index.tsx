@@ -20,9 +20,9 @@ import { style } from "./styles";
 const mapImage = require("../../assets/map.png");
 
 const alertsItems = [
-    { id: '1', status: require("../../assets/redstatus_icon.png"), title: 'Alerta de Tempestade Severa', text: 'Instruções rápidas:\nProcure abrigo imediatamente.', location: 'Localização: 200m de distância' },
-    { id: '2', status: require("../../assets/yellowstatus_icon.png"), title: 'Alerta de Inundação', text: 'Instruções rápidas:\nMova-se para um local mais alto.', location: 'Localização: 500m de distância' },
-    { id: '3', status: require("../../assets/greenstatus_icon.png"), title: 'Aviso de Incêndio', text: 'Instruções rápidas:\nFique alerta e acompanhe notícias locais.', location: 'Localização: 1km de distância' },
+    { id: '1', status: require("../../assets/redstatus_icon.png"), title: 'Alerta de Tempestade Severa', text: 'Instruções rápidas:\nProcure abrigo imediatamente.', location: 'Localização: 200m de distância', data: '28/10/2024' },
+    { id: '2', status: require("../../assets/yellowstatus_icon.png"), title: 'Alerta de Inundação', text: 'Instruções rápidas:\nMova-se para um local mais alto.', location: 'Localização: 500m de distância', data: '28/10/2024' },
+    { id: '3', status: require("../../assets/greenstatus_icon.png"), title: 'Aviso de Incêndio', text: 'Instruções rápidas:\nFique alerta e acompanhe notícias locais.', location: 'Localização: 1km de distância', data: '28/10/2024' },
 ];
 
 export default function Mapa() {
@@ -42,7 +42,8 @@ export default function Mapa() {
                             icon={item.status}
                             title={item.title}
                             description={item.text}
-                            location={item.location} />
+                            location={item.location}
+                            date={item.data} />
                     )}
                 >
                 </FlatList>
