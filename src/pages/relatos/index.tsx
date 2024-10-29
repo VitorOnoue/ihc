@@ -5,11 +5,9 @@ import {
     TextInput,
     FlatList,
     TouchableOpacity,
-    Dimensions,
 } from "react-native";
-import { style } from "./styles";
 
-const screenWidth = Dimensions.get('window').width;
+import { style } from "./styles";
 
 export default function Relatos() {
     const [newReport, setNewReport] = useState("");

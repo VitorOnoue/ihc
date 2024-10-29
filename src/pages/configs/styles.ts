@@ -1,8 +1,14 @@
 import { Dimensions, StyleSheet } from "react-native";
 
-const screenWidth = Dimensions.get('window').width;
-const screenHeight = Dimensions.get('window').height;
-
 export const style = StyleSheet.create({
-    
+    container: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: 20,
+        backgroundColor: '#fff',
+      },
+      label: {
+        fontSize: 16,
+      },
 })

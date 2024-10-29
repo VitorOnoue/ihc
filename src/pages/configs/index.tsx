@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
     Text,
     View,
-    Image,
-    FlatList,
-    Dimensions,
-    TouchableOpacity,
+    Switch,
 
 } from "react-native";
 
-const screenWidth = Dimensions.get('window').width;
-const screenHeight = Dimensions.get('window').height;
-
-// import { style } from "./styles";
+import { style } from "./styles";
 
 export default function Configs() {
+    const [isEnabled, setIsEnabled] = useState(false);
+    const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
     return (
-        <View>
-            <Text>lorem ipsum configs</Text>
+        <View style={style.container}>
+            <Text style={style.label}>Tema escuro</Text>
+            <Switch
+                trackColor={{ false: "#757677", true: "#757677" }}
+                thumbColor={isEnabled ? "#ffffff" : "#f3f3f3"}
+                onValueChange={toggleSwitch}
+                value={isEnabled}
+            />
         </View>
     );
 }

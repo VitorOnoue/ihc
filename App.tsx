@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import React, { useState, useEffect } from 'react';
+import { NavigationContainer, ThemeProvider } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Mapa from './src/pages/mapa';
 import Alertas from './src/pages/alertas';
@@ -23,13 +23,13 @@ const TabIcon = (icon: any) => {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Mapa" component={Mapa} options={{ tabBarIcon: () => TabIcon(require('./assets/map_icon.png')) }} />
-        <Tab.Screen name="Alertas" component={Alertas} options={{ tabBarIcon: () => TabIcon(require('./assets/alert_icon.png')) }} />
-        <Tab.Screen name="Relatos" component={Relatos} options={{ tabBarIcon: () => TabIcon(require('./assets/report_icon.png')) }} />
-        <Tab.Screen name="Configurações" component={Configs} options={{ tabBarIcon: () => TabIcon(require('./assets/settings_icon.png')) }} />
-      </Tab.Navigator>
-    </NavigationContainer>
+      <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen name="Mapa" component={Mapa} options={{ tabBarIcon: () => TabIcon(require('./assets/map_icon.png')) }} />
+          <Tab.Screen name="Alertas" component={Alertas} options={{ tabBarIcon: () => TabIcon(require('./assets/alert_icon.png')) }} />
+          <Tab.Screen name="Relatos" component={Relatos} options={{ tabBarIcon: () => TabIcon(require('./assets/report_icon.png')) }} />
+          <Tab.Screen name="Configurações" component={Configs} options={{ tabBarIcon: () => TabIcon(require('./assets/settings_icon.png')) }} />
+        </Tab.Navigator>
+      </NavigationContainer>
   );
 }
